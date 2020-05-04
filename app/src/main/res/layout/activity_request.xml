@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RequestActivity">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/amount"
+            android:textSize="25sp"
+            android:hint="Amount $$"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"/>
+        <EditText
+            android:id="@+id/description"
+            android:textSize="25sp"
+            android:inputType="text"
+            android:hint="Item Description."
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"/>
+        <Button
+            android:id="@+id/generate"
+            android:text="@string/generate_qr_code"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"/>
+        <ImageView
+            android:id="@+id/qr"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+        <ImageView
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
